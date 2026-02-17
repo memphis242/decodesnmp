@@ -39,7 +39,8 @@ def main():
     if args.direct_input:
         pld_str = args.direct_input
     else
-        # TODO
+        with open(args.file, 'r', encoding="utf-8") as f:
+            pld_str = f.read()
 
     # Convert ASCII string into bytes array
     # TODO
